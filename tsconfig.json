@@ -6,8 +6,8 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "esnext",  // Or change to "preserve" if needed
+    "moduleResolution": "node", // This should work well with Next.js
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",

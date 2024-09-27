@@ -1080,6 +1080,11 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@hookform/resolvers@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-3.9.0.tgz#cf540ac21c6c0cd24a40cf53d8e6d64391fb753d"
+  integrity sha512-bU0Gr4EepJ/EQsH/IwEzYLsT/PEj5C0ynLQ4m+GSHS+xKH4TfSelhluTgOaoc4kA5s7eCsQbM4wvZLzELmWzUg==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.14.tgz"
@@ -1414,6 +1419,13 @@
   integrity sha512-EJUrI8yYh7WOjNOqpoJaf1jlFIH2LvtgAl+YcFqNCa+4hj64ZXmPkAKOFs/ukjz3byN6bdb/AVUqHkI8/uWWMA==
   dependencies:
     "@radix-ui/react-use-layout-effect" "1.1.0"
+
+"@radix-ui/react-label@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.1.0.tgz"
+  integrity sha512-peLblDlFw/ngk3UWq0VnYaOLy6agTZZ+MUO/WhVfm14vJGML+xH4FAl2XQGLqdefjNb7ApRg6Yn7U42ZhmYXdw==
+  dependencies:
+    "@radix-ui/react-primitive" "2.0.0"
 
 "@radix-ui/react-portal@1.1.1":
   version "1.1.1"
@@ -1994,10 +2006,42 @@
   dependencies:
     "@swc/counter" "^0.1.3"
 
+"@tanstack/query-core@5.56.2":
+  version "5.56.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.56.2.tgz#2def2fb0290cd2836bbb08afb0c175595bb8109b"
+  integrity sha512-gor0RI3/R5rVV3gXfddh1MM+hgl0Z4G7tj6Xxpq6p2I03NGPaJ8dITY9Gz05zYYb/EJq9vPas/T4wn9EaDPd4Q==
+
+"@tanstack/react-query@^5.56.2":
+  version "5.56.2"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.56.2.tgz#3a0241b9d010910905382f5e99160997b8795f91"
+  integrity sha512-SR0GzHVo6yzhN72pnRhkEFRAHMsUo5ZPzAxfTMvUxFIDVS6W9LYUp6nXW3fcHVdg0ZJl8opSH85jqahvm6DSVg==
+  dependencies:
+    "@tanstack/query-core" "5.56.2"
+
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
   resolved "https://registry.npmjs.org/@tokenizer/token/-/token-0.3.0.tgz"
   integrity sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==
+
+"@trpc/client@^10.45.2":
+  version "10.45.2"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.45.2.tgz#15f9ba81303bf3417083fc6bb742e4e86b49da90"
+  integrity sha512-ykALM5kYWTLn1zYuUOZ2cPWlVfrXhc18HzBDyRhoPYN0jey4iQHEFSEowfnhg1RvYnrAVjNBgHNeSAXjrDbGwg==
+
+"@trpc/next@^10.45.2":
+  version "10.45.2"
+  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-10.45.2.tgz#852ce3bce9fe7114287920abd55c5cedbe5365ac"
+  integrity sha512-RSORmfC+/nXdmRY1pQ0AalsVgSzwNAFbZLYHiTvPM5QQ8wmMEHilseCYMXpu0se/TbPt9zVR6Ka2d7O6zxKkXg==
+
+"@trpc/react-query@^10.45.2":
+  version "10.45.2"
+  resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.45.2.tgz#22564b370a1fb8920ba3a1554f4149a151039198"
+  integrity sha512-BAqb9bGZIscroradlNx+Cc9522R+idY3BOSf5z0jHUtkxdMbjeGKxSSMxxu7JzoLqSIEC+LVzL3VvF8sdDWaZQ==
+
+"@trpc/server@^10.45.2":
+  version "10.45.2"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.45.2.tgz#5f2778c4810f93b5dc407146334f8da70a0b51fb"
+  integrity sha512-wOrSThNNE4HUnuhJG6PfDRp4L2009KDVxsd+2VYH8ro6o/7/jwYZ8Uu5j+VaW+mOmc8EHerHzGcdbGNQSAUPgg==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.11"
@@ -3688,7 +3732,7 @@ dotenv@8.6.0:
 
 dotenv@^16.4.5:
   version "16.4.5"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.5.tgz#cdd3b3b604cb327e286b4762e13502f717cb099f"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
 
 duplexer@^0.1.2:
@@ -7283,6 +7327,11 @@ react-helmet@6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
+react-hook-form@^7.53.0:
+  version "7.53.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.53.0.tgz#3cf70951bf41fa95207b34486203ebefbd3a05ab"
+  integrity sha512-M1n3HhqCww6S2hxLxciEXy2oISPnAzxY7gvwVPrtlczTM/1dDadXgUxDpHMrMTblDOcm/AXtXxHwZ3jpg1mqKQ==
+
 react-i18next@11.18.6:
   version "11.18.6"
   resolved "https://registry.npmjs.org/react-i18next/-/react-i18next-11.18.6.tgz"
@@ -7976,6 +8025,11 @@ sonic-boom@^3.0.0, sonic-boom@^3.1.0:
   dependencies:
     atomic-sleep "^1.0.0"
 
+sonner@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/sonner/-/sonner-1.5.0.tgz#af359f817063318415326b33aab54c5d17c747b7"
+  integrity sha512-FBjhG/gnnbN6FY0jaNnqZOMmB73R+5IiyYAw8yBj7L54ER7HB3fOSE5OFiQiE2iXWxeXKvg6fIP4LtVppHEdJA==
+
 source-list-map@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/source-list-map/-/source-list-map-2.0.1.tgz"
@@ -8062,6 +8116,7 @@ streamx@^2.15.0, streamx@^2.20.0:
     bare-events "^2.2.0"
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -9036,3 +9091,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zod@^3.23.8:
+  version "3.23.8"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
+  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
