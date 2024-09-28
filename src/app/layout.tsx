@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/NavBar";
+import Providers from "@/components/Provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,10 +37,12 @@ export default function RootLayout({
         className={cn("relative h-full font-sans antialiased", inter.className)} // Use inter.className
       >
        <main className="relative flex flex-col min-h-screen">
+        <Providers>
         <NavBar/>
         <div className="flex-grow flex-1">
        {children}
-        </div> </main>
+        </div>
+        </Providers> </main>
       </body>
     </html>
   );

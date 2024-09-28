@@ -10,6 +10,7 @@ import Image from "next/image";
 const Cart = () => {
   const itemAmount = 0;
   const fee = 0;
+  
   return (
     <Sheet>
       <SheetTrigger className="group -m-2 flex items-center p-2">
