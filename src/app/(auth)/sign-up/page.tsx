@@ -9,8 +9,9 @@ import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils"
 import { useForm } from "react-hook-form"
 import {zodResolver} from "@hookform/resolvers/zod"
-import { z } from "zod"
+
 import { AuthCredentialsValidator, TAuthCredentialsValidator } from "@/lib/validator/account-credentials-validate"
+import { trpc } from "@/trpc/client"
 const SignUp = () => {
 
   
@@ -18,8 +19,11 @@ const SignUp = () => {
     resolver:zodResolver(AuthCredentialsValidator),
   })
 
+  const {mutate,isLoading}= trpc.auth.createPayloadUser.useMutation({
+    
+  })
   const onSubmit=({email,password}:TAuthCredentialsValidator)=>{
-
+    mutate({email,password})
   }
 
   return (
@@ -48,6 +52,7 @@ const SignUp = () => {
             <Label htmlFor="password">Password</Label>
             <Input 
             {...register('password')}
+            type="password"
             className={cn({
               "focus-visible:ring-red-500": errors.password
             })} placeholder="********"/>
