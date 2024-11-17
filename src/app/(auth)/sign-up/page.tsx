@@ -49,7 +49,9 @@ const SignUp = () => {
   })
   const onSubmit=({email,password}:TAuthCredentialsValidator)=>{
     mutate({email,password})
+    console.log(email,password)
   }
+  
 
   return (
     <div className="relative container flex pt-20 flex-col items-center justify-center lg:px-0">
